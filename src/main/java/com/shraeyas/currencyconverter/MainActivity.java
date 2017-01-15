@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
         Double mon = money/conv;
         //Log.i("info", money.toString());
         //TextView ans = (TextView)findViewById(R.id.ans);
-        Toast.makeText(MainActivity.this, "Amount in Dollars" + mon.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Amount in Dollars" + String.format("%.2f" , mon), Toast.LENGTH_SHORT).show();
     }
 
     public void rupee(View view)
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity
         Double mon = money * conv;
         //Log.i("info", money.toString());
         //TextView ans = (TextView)findViewById(R.id.ans);
-        Toast.makeText(MainActivity.this, "Amount in Rupees" + mon.toString(), Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, "Amount in Rupees" + String.format("%.2f" , mon), Toast.LENGTH_SHORT).show();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
